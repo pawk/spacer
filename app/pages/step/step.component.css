@@ -1,0 +1,75 @@
+.step-background {
+    background-size: cover;
+}
+
+.step-overlay {
+    background-color: black;
+    opacity: 0.5;
+}
+
+.next-step-btn {
+    height: 50;
+    color: white;
+    background-color: deepskyblue;
+}
+
+.step-container {
+    background-size: cover;
+    justify-content: flex-start;
+}
+
+.prev-step-btn {
+    height: 50;
+    color: deepskyblue;
+    background-color: white;
+}
+
+.active-step {
+    color: white;
+    flex-grow: 1;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+.active-step .desc-group {
+    margin-top: 50;
+}
+
+.active-step .desc-group .title {
+    font-size: 30;
+    height: 100;
+}
+
+.active-step .desc-group .step-info {
+    margin-top: 80;
+    padding: 20;
+    background-color: white;
+    color: black;
+    opacity: 0.7;
+}
+
+.active-step .desc-group .step-info .desc {
+    margin-top: 10;
+    font-size: 14;
+}
+
+.audio-controls {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50;
+}
+
+.geo-distance {
+    width: 60;
+}
+
+.adventure-mode {
+    margin-bottom: 20;
+}
+.geo-details {
+
+}
+
+.empty-space {
+    flex-grow: 1;
+}

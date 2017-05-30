@@ -1,0 +1,45 @@
+<GridLayout>
+    <StackLayout class="step-background" backgroundImage="url('{{backgroundUrl}}')"></StackLayout>
+    <StackLayout class="step-overlay"></StackLayout>
+    <FlexboxLayout dock="bottom" class="step-container" flexDirection="column"
+    >
+        <FlexboxLayout class="active-step">
+            <StackLayout class="desc-group">
+                <Label textWrap="true" class=" title" [text]="activeStep.meta.title"></Label>
+
+
+                <FlexboxLayout *ngIf="settings.geolocationEnabled"
+                               class="step-info"
+                               flexDirection="column"
+                               justifyContent="center">
+                    <StackLayout *ngIf="settings.adventureModeEnabled" class="adventure-mode">
+                        <Label class="h2" text="Adventure Mode"></Label>
+                        <TextView text="Znajdź miejsce, a dźwięk odtworzy się automatycznie kiedy będziesz w pobliżu."></TextView>
+                    </StackLayout>
+
+                    <FlexboxLayout *ngIf="settings.geolocationEnabled" class="geo-details" flexDirection="row"
+                                   justifyContent="center">
+                        <Label text="Dystans: "></Label>
+                        <Label [text]="distanceBetweenLocations" class="geo-distance"></Label>
+                        <Label text=" metrów"></Label>
+                    </FlexboxLayout>
+
+                </FlexboxLayout>
+            </StackLayout>
+
+            <FlexboxLayout class="audio-controls">
+                <Button (tap)="onReplay()" text="Powtórz"></Button>
+                <Button (tap)="onPlay()" text="Odtwórz"></Button>
+                <Button (tap)="onPause()" text="Pauza"></Button>
+            </FlexboxLayout>
+        </FlexboxLayout>
+
+        <StackLayout>
+            <Button *ngIf="nextStep && isNextStepUnlocked" class="next-step-btn" [nsRouterLink]="['/step', nextStep.id]"
+                    [text]="nextStep.label"></Button>
+            <Button *ngIf="prevStep" class="prev-step-btn" [nsRouterLink]="['/step', prevStep.id]"
+                    [text]="prevStep.label"></Button>
+        </StackLayout>
+    </FlexboxLayout>
+
+</GridLayout>

@@ -1,0 +1,36 @@
+.icon {
+    font-family: "IcoMoon-Free";
+}
+.home-page {
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url('~/assets/images/home-background.jpg');
+    background-size: cover;
+}
+
+.header {
+
+}
+
+.home-page .main {
+    flex-grow: 1;
+}
+
+.home-page .button-group {
+
+}
+
+.home-page .button-group .btn {
+    background-color: black;
+    color: white;
+    font-size: 26;
+    height: 50;
+    opacity: 0.4;
+    width: 100%;
+}
+
+
+
+.home-page .button-group .btn-small {
+    font-size: 14;
+}

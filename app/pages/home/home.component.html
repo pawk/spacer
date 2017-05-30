@@ -1,0 +1,30 @@
+<GridLayout>
+    <FlexboxLayout flexDirection="column" justifyContent="flex-end" class="home-page-background">
+    </FlexboxLayout>
+
+    <FlexboxLayout flexDirection="column" justifyContent="flex-end" class="home-page">
+        <ActionBar class="header" title="Spacer Po Żydowskim Mieście">
+            <ActionItem *ngIf="false"
+                        [text]="hamburgerMenuIcon"
+                        class="icon"
+                        ios.position="left" ></ActionItem>
+
+            <ActionItem *ngIf="false"
+                        tap="onDelete"
+                        ios.systemIcon="9"
+                        ios.position="right"
+                        text="share"
+                        android.position="popup"></ActionItem>
+        </ActionBar>
+        <StackLayout class="main">
+        </StackLayout>
+
+        <StackLayout class="button-group">
+            <Button *ngIf="!lastUnlockedStep" text="Zacznij od początku" [nsRouterLink]="['/step', 1]" class="btn start-btn"></Button>
+            <Button *ngIf="lastUnlockedStep" text="Idź do {{lastUnlockedStep.meta.title}}" [nsRouterLink]="['/step', lastUnlockedStep.id]" class="btn start-btn"></Button>
+            <Button text="Gdzie byłem?" [nsRouterLink]="['/step/list']" class="btn btn-small list-btn"></Button>
+            <Button text="Mapa" [nsRouterLink]="['/map']" class="btn btn-small list-btn"></Button>
+            <Button text="Ustawienia" [nsRouterLink]="['/settings']" class="btn btn-small settings-btn"></Button>
+        </StackLayout>
+    </FlexboxLayout>
+</GridLayout>

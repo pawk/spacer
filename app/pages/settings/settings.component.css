@@ -1,0 +1,22 @@
+.page-settings {
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+}
+
+.header {
+
+}
+
+.page-settings .main {
+    flex-grow: 1;
+    padding: 25 15;
+}
+
+.page-settings .main StackLayout {
+    margin-bottom: 20;
+}
+
+.page-settings .main Switch {
+    margin-right: 10;
+}

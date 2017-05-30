@@ -1,0 +1,28 @@
+<FlexboxLayout flexDirection="column" class="page-settings">
+    <StackLayout class="main">
+        <StackLayout orientation="horizontal">
+            <Switch #geoSw
+                    (checkedChange)="onGeoSwitchChange(geoSw.checked)"
+                    [checked]="settings.geolocationEnabled"></Switch>
+            <Label text="Usługa lokalizacji"></Label>
+        </StackLayout>
+        <GridLayout columns="60, *" rows="auto" *ngIf="settings.geolocationEnabled">
+            <StackLayout row="0" col="0">
+                <Switch #advSw
+                        (checkedChange)="onAdventureSwitchChange(advSw.checked)"
+                        [checked]="settings.adventureModeEnabled"></Switch>
+            </StackLayout>
+            <StackLayout  row="0" col="1">
+                <Label text="Adventure Mode"></Label>
+                <TextView
+                        text="Znajdź kolejne miejsce, a dźwięk zostanie automatycznie odtworzony. Wtedy też zostanie odblokowany kolejny przystanek naszego spaceru."></TextView>
+            </StackLayout>
+            <StackLayout  row="0" col="1">
+                <Label text="Adventure Mode"></Label>
+                <TextView
+                        text="Znajdź kolejne miejsce, a dźwięk zostanie automatycznie odtworzony. Wtedy też zostanie odblokowany kolejny przystanek naszego spaceru."></TextView>
+            </StackLayout>
+        </GridLayout>
+    </StackLayout>
+
+</FlexboxLayout>
