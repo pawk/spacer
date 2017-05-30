@@ -1,10 +1,10 @@
 {
-  "description": "NativeScript Application",
+  "description": "Spacer po Żydowskim Mieście",
   "license": "SEE LICENSE IN <your-license-filename>",
   "readme": "NativeScript Application",
   "repository": "<fill-your-repository-here>",
   "nativescript": {
-    "id": "org.nativescript.HelloWorld",
+    "id": "org.trach.spacer",
     "tns-ios": {
       "version": "3.0.1"
     }
@@ -18,11 +18,15 @@
     "@angular/platform-browser": "4.0.0",
     "@angular/platform-browser-dynamic": "4.0.0",
     "@angular/router": "4.0.0",
+    "lodash": "^4.17.4",
     "nativescript-angular": "~3.0.0",
     "nativescript-audio": "^3.4.2",
     "nativescript-geolocation": "^3.0.0",
+    "nativescript-google-maps-sdk": "^2.1.1",
+    "nativescript-sound": "^1.0.4",
     "nativescript-telerik-ui": "^2.0.1",
     "nativescript-theme-core": "~1.0.4",
+    "nativescript-vibrate": "^1.1.2",
     "reflect-metadata": "~0.1.8",
     "rxjs": "~5.2.0",
     "tns-core-modules": "~3.0.0",

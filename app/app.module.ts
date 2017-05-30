@@ -4,8 +4,8 @@ import { SIDEDRAWER_DIRECTIVES } from "nativescript-telerik-ui/sidedrawer/angula
 import {CommonModule} from '@angular/common';
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 
-import {NativeScriptRouterModule} from "nativescript-angular";
-import {routing, navigableComponents} from './app.routing';
+import {NativeScriptRouterModule} from "nativescript-angular/router";
+import { RoutingModule, navigableComponents} from './app.routing';
 
 import {SettingsModule} from './pages/settings/settings.module';
 import {StepModule} from './pages/step/step.module';
@@ -26,8 +26,7 @@ import {AppComponent} from "./app.component";
 	imports: [
 		CommonModule,
 		NativeScriptModule,
-		NativeScriptRouterModule,
-		routing,
+		RoutingModule,
 		StepModule,
 		SettingsModule,
 		MapModule
