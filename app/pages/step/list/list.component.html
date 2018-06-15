@@ -1,8 +1,8 @@
 <ListView [items]="list">
-    <template let-item="item" let-i="index">
+    <ng-template let-item="item" let-i="index">
         <StackLayout>
             <Label [text]='"index: " + i'></Label>
             <Label [text]='"[" + item.id +"] " + item.meta.title'></Label>
         </StackLayout>
-    </template>
+    </ng-template>
 </ListView>

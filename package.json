@@ -5,21 +5,30 @@
   "repository": "<fill-your-repository-here>",
   "nativescript": {
     "id": "org.trach.spacer",
+    "tns-android": {
+      "version": "3.0.1"
+    },
     "tns-ios": {
       "version": "3.0.1"
     }
   },
+  "scripts": {
+    "start": "tns run",
+    "android-emulator": "eval $(${HOME}/Library/Android/sdk/tools/emulator -avd circleci-android24)",
+    "ios-simulator": "open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
+  },
   "dependencies": {
-    "@angular/common": "4.0.0",
-    "@angular/compiler": "4.0.0",
-    "@angular/core": "4.0.0",
-    "@angular/forms": "4.0.0",
-    "@angular/http": "4.0.0",
-    "@angular/platform-browser": "4.0.0",
-    "@angular/platform-browser-dynamic": "4.0.0",
-    "@angular/router": "4.0.0",
+    "@angular/animations": "~6.0.0",
+    "@angular/common": "~6.0.0",
+    "@angular/compiler": "~6.0.0",
+    "@angular/core": "~6.0.0",
+    "@angular/forms": "~6.0.0",
+    "@angular/http": "~6.0.0",
+    "@angular/platform-browser": "~6.0.0",
+    "@angular/platform-browser-dynamic": "~6.0.0",
+    "@angular/router": "~6.0.0",
     "lodash": "^4.17.4",
-    "nativescript-angular": "~3.0.0",
+    "nativescript-angular": "~6.0.0",
     "nativescript-audio": "^3.4.2",
     "nativescript-geolocation": "^3.0.0",
     "nativescript-google-maps-sdk": "^2.1.1",
@@ -28,13 +37,18 @@
     "nativescript-theme-core": "~1.0.4",
     "nativescript-vibrate": "^1.1.2",
     "reflect-metadata": "~0.1.8",
-    "rxjs": "~5.2.0",
-    "tns-core-modules": "~3.0.0",
+    "rxjs": "~6.1.0",
+    "rxjs-compat": "^6.2.1",
+    "tns-core-modules": "^4.1.0",
     "zone.js": "~0.8.5"
   },
   "devDependencies": {
+    "babel-traverse": "6.26.0",
+    "babel-types": "6.26.0",
+    "babylon": "6.18.0",
+    "lazy": "1.0.11",
     "nativescript-dev-android-snapshot": "^0.*.*",
     "nativescript-dev-typescript": "^0.4.0",
-    "typescript": "~2.2.1"
+    "typescript": "~2.7.0"
   }
 }

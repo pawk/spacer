@@ -2,7 +2,7 @@ import {NgZone} from '@angular/core';
 import {Injectable} from '@angular/core';
 import {watchLocation, clearWatch, Location, distance} from 'nativescript-geolocation';
 import {Accuracy} from 'ui/enums';
-import {Observable} from 'rxjs';
+import {Observable} from 'rxjs/Rx';
 import {Subject} from 'rxjs/Subject';
 
 @Injectable()

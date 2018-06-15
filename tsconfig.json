@@ -19,8 +19,11 @@
             ]
         }
     },
+    "include": [
+        "app/**/*"
+    ],
     "exclude": [
-        "node_modules",
+        "node_modules/**/*",
         "platforms",
         "**/*.aot.ts",
         "**/*.spec.ts"
