@@ -38,4 +38,20 @@ tns run ios
 tns run android
 ```
 
+## Build
+
+```
+tns build android
+# or
+tns build ios
+```
+
+## Deploy 
+
+Connect your device to the computer and execute
+```
+tns build android
+# or
+tns build ios
+```
 To run application on physical device, one can ...
